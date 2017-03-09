@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E183b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Present-->
+        <!--Current-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Time_Travel" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,7 +74,7 @@
                             <constraint firstItem="6Gv-iO-uaq" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="swj-rd-ds2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Present" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Current" image="first" id="acW-dT-cKf"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="Label1" destination="qbb-GB-EPn" id="o0U-jI-4Eh"/>
@@ -86,9 +86,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-278"/>
+            <point key="canvasLocation" x="801" y="-417"/>
         </scene>
-        <!--Future-->
+        <!--Time Travel-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Time_Travel" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,7 +159,7 @@
                             <constraint firstItem="G9F-61-GYm" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="qxD-Sr-K6N"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Future" image="second" badgeValue="!!!" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Time Travel" image="second" id="cPa-gy-q4n"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="Label1" destination="Tjv-dm-0d6" id="pcY-57-MXj"/>
@@ -170,7 +170,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="361.16941529235385"/>
+            <point key="canvasLocation" x="1495" y="0.0"/>
+        </scene>
+        <!--Time Stop-->
+        <scene sceneID="Ccl-UI-8LJ">
+            <objects>
+                <viewController title="Time Stop" id="T35-Y8-UVT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yql-BF-MTx"/>
+                        <viewControllerLayoutGuide type="bottom" id="whY-4g-XvL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OvG-sx-emX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" image="first" id="S91-ta-j0M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxJ-8p-oDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="430"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -185,6 +204,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="T35-Y8-UVT" kind="relationship" relationship="viewControllers" id="YBp-D0-lhI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
